@@ -8,15 +8,16 @@ by W. P. Petersen[1].
 
 ## Classes in this Package
 
-Two classes are provided in namespace teh::zufall.
-Class **teh::zufall::Random** contains zufall random number generators.
+Two classes are provided in namespace `teh::zufall`.
+Class **Random** contains zufall random number generators
+for uniform, normal, and Poisson distributions.
 Class **RandomSeed** manages a random seed in proper range for class **Random**.
 
 Here is a brief summary of these classes:
 
 ```
 RandomSeed (
-  unsigned int const entropy,   // A large entropy value; default is std::time(NULL)
+  unsigned int const entropy,   // An entropy value; default is std::time(NULL)
   unsigned int const minSeed,   // Minimum allowed seed > zero
   unsigned int const maxSeed)   // Maximum allowed seed; < (max(unsigned int) - 144)
 
@@ -30,14 +31,14 @@ Random ( unsigned int const seed )
 // 1) generate a vector of values
 // 2) generate a single value
 
-Random::Uniform ( unsigned int const n, std::vector<double> & u )
-Random::Uniform ()
+void Random::Uniform ( unsigned int const n, std::vector<double> & u )
+unsigned int Random::Uniform ()
 
-Random::Normal ( unsigned int const n, std::vector<double> & g )
-Random::Normal ()
+void Random::Normal ( unsigned int const n, std::vector<double> & g )
+unsigned int Random::Normal ()
 
-Random::Poisson ( unsigned int const n, double const mu, std::vector<unsigned int> & q )
-Random::Poisson ( double const mu )
+void Random::Poisson ( unsigned int const n, double const mu, std::vector<unsigned int> & q )
+unsigned int Random::Poisson ( double const mu )
 ```
 
 ## Using class Random
