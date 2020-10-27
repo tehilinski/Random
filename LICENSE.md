@@ -1,13 +1,10 @@
 #  Apache License for package Random
 
-Version 2.0, January 2004\n
-http://www.apache.org/licenses/ \n
+Version 2.0, January 2004, http://www.apache.org/licenses/
 
 **Package Random: Copyright 2020 Thomas E. Hilinski. All rights reserved**
 
-\n
 **TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION**
-\n
 
 1. Definitions.
 
